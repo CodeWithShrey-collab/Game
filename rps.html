@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+    <div id="start-screen">
+      <h1>Rock Paper Scissors</h1>
+      <button id="start-btn">Start Game</button>
+    </div>
+    <div id="game-area" style="display:none; flex-direction:column; align-items:center; justify-content:center;">
+      <h1>Rock Paper Scissors</h1>
+      <div id="scoreboard">
+        <div style="display: flex; justify-content: center; gap: 60px; width: 220px; font-size: 1rem; margin-bottom: 2px;">
+          <span>Human </span>
+          <span><b>:</b></span>
+          <span>Computer</span>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 60px; width: 220px;">
+          <span id="user-score">0</span>
+          <span id="comp-score">0</span>
+        </div>
+         <div id="game-count" style="display:none;">Game Count: <span id="game-number">0</span></div>
+      </div>
+      <div id="choices">
+        <button class="choice-btn" onclick="play('Rock')">✊<br>Rock</button>
+        <button class="choice-btn" onclick="play('Paper')">✋<br>Paper</button>
+        <button class="choice-btn" onclick="play('Scissor')">✌️<br>Scissor</button>
+      </div>
+      <div id="result-box"></div>
+      <button id="reset-btn" style="margin-top:24px; font-size:1.1rem; padding:10px 32px; border-radius:8px; background:#e74c3c; color:#fff; border:none; cursor:pointer;">Reset</button>
+    </div>
+    <script src="rps.js"></script>
+</body>
+</html>
